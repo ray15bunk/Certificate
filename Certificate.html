@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cisco Certification Display - Mobile Ready</title>
+    <style>
+        /* הגדרות בסיס ורקע כהה יותר - נעים ומקצועי */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1f2a38; /* כחול-אפור כהה, מעניין ומרשים */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            box-sizing: border-box; /* מבטיח שה-padding לא יגרום לחריגה מגבולות המסך */
+        }
+
+        /* מיכל התמונה: מעניק את העיצוב היוקרתי */
+        .certificate-image-wrapper {
+            max-width: 95%; /* תופס 95% מרוחב המסך הקיים (Mobile-First) */
+            background-color: #ffffff; 
+            padding: 10px; 
+            border-radius: 12px; 
+            border: 3px solid #007BB6; /* מסגרת כחולה בולטת (כצבע הלוגו) */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); /* צל חזק יותר לרקע הכהה */
+            transition: transform 0.3s ease-in-out; /* אפקט מעבר קטן */
+        }
+
+        /* הגדלת התמונה בפתיחה */
+        .certificate-image {
+            max-width: 100%; /* תופס 100% מהמיכל שלו (כלומר: 95% מהמסך) */
+            height: auto;
+            display: block;
+            border-radius: 8px; /* התאמה לפינות המיכל */
+        }
+
+        /* Media Query: התאמה למסכים גדולים יותר (מחשבים וטאבלטים) */
+        @media (min-width: 768px) {
+            .certificate-image-wrapper {
+                max-width: 850px; /* רוחב קבוע למסכים גדולים */
+                padding: 25px; 
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); 
+            }
+            /* אפשרות קטנה להוספת אפקט ריחוף עדין (אופציונלי) */
+            .certificate-image-wrapper:hover {
+                 transform: translateY(-5px); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="certificate-image-wrapper">
+    <img src="Certificate.png" alt="Certificate of Course Completion - Cisco" class="certificate-image">
+</div>
+
+</body>
+</html>
